@@ -1,0 +1,23 @@
+.asterisk {
+    color: red; 
+}
+.btn_finalizar_comprar{
+    background-color: black;
+    width: 20%;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;  
+
+}
+
+form{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #d2e1e0c9;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+    text-align: center;
+}
