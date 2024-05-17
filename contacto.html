@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -61,42 +62,32 @@
           <div class="row">
             <div class="col- col-sm-12	col-md-6	col-lg-4	col-xl-3	col-xxl-3 mb-2">
               <label for="nombre">Nombre</label>
-              <input  class="w-100" type="text" ><br> <br>
+              <input id="nombre"  class="w-100" type="text" required ><br> <br>
             </div>
           <div class="col- col-sm-12	col-md-6	col-lg-4	col-xl-3	col-xxl-3 mb-2"> 
             <label for="apellido">Apellido</label>
-            <input  class="w-100" type="text" ><br> <br>
+            <input id="apellido"  class="w-100" type="text"  ><br> <br>
           </div>
           <div class="col- col-sm-12	col-md-6	col-lg-4	col-xl-3	col-xxl-3 mb-2">
             <label for="email">Correo electrónico</label>
-            <input  class="w-100" type="email" ><br> <br>
+            <input id="email" class="w-100" type="text" placeholder="example@gmail.com " ><br> <br>
           </div>
           <div class="col- col-sm-12	col-md-6	col-lg-4	col-xl-3	col-xxl-3 mb-2">
-            <label for="">Teléfono</label>
-            <input  class="w-100" type="text"><br> <br>
+            <label for="telefono">Teléfono</label>
+            <input id="telefono" class="w-100" type="text" pattern="\x2b[0-9]+" size="12" placeholder="+56976284353"><br> <br>
           </div>
       
         </div> 
-
-         
+       
           <div class="col- col-sm-12	col-md-6	col-lg-4	col-xl-3	col-xxl-3 mb-2">
             <label for="mensaje">Comentario</label>
             <textarea cols="5" rows="5" class="form-control" id="mensaje" placeholder="" aria-label="Mensaje"></textarea><br>  
           </div>      
-          <button type="button" class="btn btn-warning">Enviar</button>
+          <button class="btn btn-warning" onclick="enviarDatosDeContacto()" type="button" >Enviar</button>
         </form>
 
       </section>
-
-
-
-
-
-
-    <footer>
-
-        <h1> Pie de pagina</h1>
-    </footer>
+      <script src="contacto.js"></script>
       
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

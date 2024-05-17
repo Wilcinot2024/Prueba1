@@ -25,54 +25,130 @@
     
     <section class="container">
         <form action="" type="text">
-          <h2 style="color: black; text-align: center;">Finalizar tu compra</h2><br>
-          <div class="container text-center">
-            <div class="row ">
-              <div class="col">
-                <label for="nombre" class="form-label">Nombre <span class="asterisk">*</span></label>
-                <input type="text" class="form-control" id="" placeholder="">
-                <br>
+          <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="./images lo.png" alt="" width="72" height="57">
+            <h2>Formulario de pago</h2>
+          </div>
       
-              </div>
-              <div class="col">
-                <label for="nombre" class="form-label">Apellido <span class="asterisk">*</span></label>
-                <input type="text" class="form-control" id="" placeholder="">
-              </div>
-              <br>
+          <div class="row g-5">
+            <div class="col-md-5 col-lg-4 order-md-last">
+              <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-primary">Tu Carrito</span>
+                <span class="badge bg-primary rounded-pill">3</span>
+              </h4>
+              <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Pontalon de hombre</h6>
+                    <small class="text-muted">este Pontalones de hombre</small>
+                  </div>
+                  <span class="text-muted">$12</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">chaqueta de mujer</h6>
+                    <small class="text-muted">chaqueta caliente para el frio</small>
+                  </div>
+                  <span class="text-muted">$8</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Conjunto de niño</h6>
+                    <small class="text-muted">Conjunto de ropa de calle estilo cargo para tu niño</small>
+                  </div>
+                  <span class="text-muted">$5</span>
+                </li>
+               
+                <li class="list-group-item d-flex justify-content-between">
+                  <span>Total (USD)</span>
+                  <strong>$20</strong>
+                </li>
+              </ul>
             </div>
-            <div class="row">
-              <div class="col">
-                <label for="estado">Número de teléfono <span class="asterisk">*</span></label>
-                <input type="text" class="form-control" id="" placeholder="">
-              </div>
-              <br> 
-              <div class="col">
-                <label for="email">Correo electronico <span class="asterisk">*</span></label>
-              <input type="email" class="form-control" id="" placeholder="">
-            </div>
-            </div>
-            <br>
-            <div class="row ">       
-                <label for="direccion" class="form-label">Dirección de facturación <span class="asterisk">*</span></label><br>
-                 <br>
-                <div class="col">
-                  <label for="pais">Región <span class="asterisk">*</span></label>
-                  <select>
-                    <option >Región de Arica y Parinacota</option>
-                    <option >Región de Tarapacá</option>
-                    <option >Región de Atacama</option>
-                    <option >Región de Antofagasta</option>
-                    <option >Región Metropolitana de Santiago</option>
-                    <option >Región de Coquimbo</option>
-                    <option >Región de Valparaíso</option>
-                    <option >Región del Maule</option>
-                  </select>
-                <br>
-                <br>
-                </div>
-                <div class="col">
-                  <label for="comuna">Comuna<span class="asterisk">*</span></label>
-                  <select>
+            <div class="col-md-7 col-lg-8">
+              <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-sm-4">
+                    <label for="firstName" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Valid first name is required.
+                    </div>
+                  </div>
+      
+                  <div class="col-sm-4">
+                    <label for="lastName" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Valid last name is required.
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <label for="username" class="form-label">Edad</label>
+                    <div class="input-group has-validation">
+                      <span class="input-group-text"></span>
+                      <input type="text" class="form-control" id="Edad" placeholder="  +17" required>
+                    <div class="invalid-feedback">
+                        Ingresa tu edad.
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="username" class="form-label">Email</label>
+                    <div class="input-group has-validation">
+                      <span class="input-group-text">@</span>
+                      <input type="text" class="form-control" id="username" placeholder="Username" required>
+                    <div class="invalid-feedback">
+                        Ingresa un Correo valido.
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                    <input type="email" class="form-control" id="email" placeholder="Repite el correo">
+                    <div class="invalid-feedback">
+                      Ingresa un Correo valido.
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="address" class="form-label">Direccion</label>
+                    <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                    <div class="invalid-feedback">
+                      Ingresa un Direccion valido.
+                    </div>
+                  </div>
+      
+                  <div class="col-12">
+                    <label for="address2" class="form-label">Direccion 2 <span class="text-muted">(Optional)</span></label>
+                    <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                  </div>
+      
+                  <div class="col-md-5">
+                    <label for="country" class="form-label">Pais</label>
+                    <select class="form-select" id="country" required>
+                      <option value="">selecciona...</option>
+                      <option>Estados Unidos</option>
+                      <option>Chile</option>
+                      <option>Ecuador</option>
+                      <option>Mexico</option>
+                      <option>Canada</option>
+                      <option>Peru</option>
+                      <option>Venezuela</option>
+                      <option>Colombia</option>
+                      <option>Haiti</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Porfavor selecciona un Pais.
+                    </div>
+                  </div>
+      
+                  <div class="col-md-4">
+                    <label for="state" class="form-label">Region</label>
+                    <select class="form-select" id="state" required>
+                      <option value="">selecciona...</option> 
                     <option >Santiago</option>
                     <option >Concepción</option>
                     <option >Viña del mar</option>
@@ -81,73 +157,96 @@
                     <option >La Serena</option>
                     <option >Temuco</option>
                     <option >Talca</option>
-                  </select>          
-                </div> 
-                <br>
-                <br>       
-              <br>
+                    </select>
+                    <div class="invalid-feedback">
+                      Porfavor selecciona un Region.
+
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="zip" class="form-label">Codigo Postal</label>
+                    <input type="text" class="form-control" id="zip" placeholder="" required>
+                    <div class="invalid-feedback">
+                     Codigo postal requerido.
+                    </div>
+                  </div>
+                </div>
+      
+                <hr class="my-4">
+      
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="same-address">
+                  <label class="form-check-label" for="same-address">La dirección de envío es la misma que mi dirección de facturación.</label>
+                </div>
+      
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="save-info">
+                  <label class="form-check-label" for="save-info">Guarda esta información para la próxima vez.</label>
+                </div>
+      
+                <hr class="my-4">
+      
+                <h4 class="mb-3">PAGO</h4>
+      
+                <div class="my-3">
+                  <div class="form-check">
+                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                    <label class="form-check-label" for="credit">Tarjeta Credito</label>
+                  </div>
+                  <div class="form-check">
+                    <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                    <label class="form-check-label" for="debit">Tarjeta Debito </label>
+                 </div>
+                  
+                </div>
+      
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <label for="cc-name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                    <small class="text-muted">Nombre completo</small>
+                    <div class="invalid-feedback">
+                      Requiere ingresar el nombre del titular de la tarjeta
+                    </div>
+                  </div>
+      
+                  <div class="col-md-6">
+                    <label for="cc-number" class="form-label">Numero </label>
+                    <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Requiere ingresar el numero de la tarjeta
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="cc-expiration" class="form-label">Expiration</label>
+                    <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Expiration date required
+                    </div>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <label for="cc-cvv" class="form-label">CVV</label>
+                    <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Security code required
+                    </div>
+                  </div>
+                </div>
+      
+                <hr class="my-4">
+      
+                <button class="w-100 btn btn-warning btn-lg" onclick="validarEdad()" type="submit">Pagar</button>
+              </form>
             </div>
-            <div class="row">
-              <div class="col">
-                <label for="nomnre">Nombre de la calle <span class="asterisk">*</span></label>
-                <input type="text" class="form-control" id="" placeholder=""><br>
-              </div>
-              <br>
-              <div class="col">
-                <label for="number">Depatarmento/Casa <span class="asterisk">*</span></label>
-                <input type="text" class="form-control" id="" placeholder=""><br>
-              </div>
-            </div>
-            <br>
-           
-              <div class="row">       
-                <div class="col">
-                  <label for="metodo_pago">Métodos de Pago <span class="asterisk">*</span></label>
-                  <br>
-                  <br>
-                 <input class="form-control" list="metodoPagoOptions" id="seleccione" placeholder="Seleccione un metodo">
-                 <datalist id="metodoPagoOptions">
-                 <option value="Debito">
-                 <option value="Credito">
-                 <option value="Mercado Pago">
-                 <option value="Paypal">
-                  <option value="Transferencia bancaria"></option>
-                 </datalist><br>
-                </div>
-              </div>
-              
-              <div class="row">
-                <div class="col">
-                  <label for="banco">Banco <span class="asterisk">*</span></label>
-                  <input class="form-control" list="bancoOptions" id="seleccione" placeholder="Seleccione un banco">
-                 <datalist id="bancoOptions">
-                 <option value="Santander">
-                 <option value="Banco de chile">
-                 <option value="Falabella">
-                 <option value="Cencosud">
-                  <option value="Banco estado"></option>
-                 </datalist><br>
-                 
-                </div>
-                <div class="col">
-                  <label for="numero">Numero de la Tarjeta <span class="asterisk">*</span></label>
-                <input type="number" class="form-control" id="numero" placeholder=""><br><br>
-                </div>       
-              </div>
-              <div class="row">
-                <div class="col">
-                  <label for="fecha_vencimiento">Fecha de vencimiento <span class="asterisk">*</span></label>
-                <input type="datetime" class="form-control" id="fecha_vencimiento" placeholder=""><br><br>
-                </div>
-                <div class="col">
-                  <label for="codigo_seguridad">Código de seguridad <span class="asterisk">*</span></label>
-                <input type="number" class="form-control" id="numero" placeholder=""><br>
-                </div>
-              </div>
-              <button  class="btn_finalizar_comprar btn-lg " type="submit">Finalizar Comprar</button>  
+          </div>
+        </main>
         </form>
       </section>
             
+      <script src='./edad.js'></script
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script
 </body>
 </html>
